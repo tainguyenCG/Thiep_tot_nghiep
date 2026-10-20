@@ -1,69 +1,72 @@
 # 🎓 Thiệp Tốt Nghiệp — Nguyễn Thị Thuỳ Trang
 
+> 🌐 **Live:** [https://tainguyencg.github.io/Thiep_tot_nghiep/](https://tainguyencg.github.io/Thiep_tot_nghiep/)
+
 ---
 
-## 📁 Cây thư mục đã chuẩn để deploy
+## 📁 Cây thư mục
 
 ```
 Thiep/
-├── index.html          ← Trang chính + đầy đủ SEO tags
-├── robots.txt          ← Cho phép crawler + trỏ tới sitemap
-├── sitemap.xml         ← Khai báo URL + ảnh thumbnail cho Google
-├── manifest.json       ← PWA, hiển thị tên khi share trên mobile
-├── README.md           ← File hướng dẫn này
+├── index.html              ← Trang chính + đầy đủ SEO / OG tags
+├── robots.txt              ← Cho phép crawler + trỏ tới sitemap
+├── sitemap.xml             ← Khai báo URL + ảnh thumbnail cho Google
+├── manifest.json           ← PWA — hiển thị tên khi thêm vào màn hình
+├── README.md               ← File hướng dẫn này
 └── assets/
-    ├── background.jpg      ← Ảnh nền thiệp
-    ├── selesaiwisuda.jpg   ← Ảnh thumbnail SEO (og:image)
+    ├── background.jpg          ← Ảnh nền thiệp
+    ├── selesaiwisuda.jpg       ← Ảnh thumbnail SEO (og:image)
     └── Anh_mau.jpg
 ```
 
 ---
 
-## 🚀 Checklist deploy (chỉ làm 1 lần)
+## 🚀 Deploy lên GitHub Pages
 
-### Bước 1 — Deploy lên Netlify Drop
+### Bước 1 — Push code lên GitHub
 
-1. Truy cập **[netlify.com/drop](https://app.netlify.com/drop)**
-2. Kéo thả **toàn bộ thư mục `Thiep/`** vào vùng kéo thả trên trang đó
-3. Chờ vài giây → Netlify tự tạo URL dạng `https://xxx-xxx-xxx.netlify.app`
-4. Copy URL đó lại
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/<username>/<repo>.git
+git push -u origin main
+```
 
-### Bước 2 — Thay placeholder domain
+### Bước 2 — Bật GitHub Pages
 
-Sau khi có URL thật, mở 3 file dưới đây và tìm & thay **tất cả** chỗ có `https://YOUR-DOMAIN.com` thành URL vừa copy:
+1. Vào repo trên GitHub → **Settings** → **Pages**
+2. Mục **Source** chọn: `Deploy from a branch`
+3. Branch: **main** / Folder: **/ (root)** → nhấn **Save**
+4. Chờ ~1-2 phút → GitHub tự tạo URL dạng:
+   `https://<username>.github.io/<repo>/`
 
-| File | Số chỗ cần thay | Vị trí |
-|---|---|---|
-| `index.html` | **5 chỗ** | thẻ `<base>`, `canonical`, `og:url`, `og:image`, `twitter:image` |
-| `sitemap.xml` | **2 chỗ** | `<loc>` trang và `<image:loc>` ảnh |
-| `robots.txt` | **1 chỗ** | dòng `Sitemap:` |
+### Bước 3 — Kiểm tra thumbnail khi chia sẻ
 
-> **Mẹo nhanh:** Dùng **Ctrl + H** (Find & Replace) trong VS Code  
-> - Find: `https://YOUR-DOMAIN.com`  
-> - Replace: `https://xxx-xxx-xxx.netlify.app`  
-> → Replace All → Save → Kéo thả lại lên Netlify Drop
+Sau khi deploy, dùng công cụ sau để force-refresh cache và kiểm tra thumbnail:
 
-### Bước 3 — Kiểm tra thumbnail
+| Nền tảng | Công cụ |
+|---|---|
+| **Facebook / Messenger** | [developers.facebook.com/tools/debug](https://developers.facebook.com/tools/debug/) → nhập URL → nhấn **Scrape Again** |
+| **Zalo** | Xóa hội thoại cũ rồi gửi link lại |
+| **Tổng quát** | [opengraph.xyz](https://www.opengraph.xyz/) |
 
-Sau khi deploy xong, dán URL vào công cụ kiểm tra để xem thumbnail hiện đúng chưa:
-
-- **Facebook / Zalo**: [developers.facebook.com/tools/debug](https://developers.facebook.com/tools/debug/)
-- **Twitter / X**: [cards-dev.twitter.com/validator](https://cards-dev.twitter.com/validator)
-- **Tổng quát**: [opengraph.xyz](https://www.opengraph.xyz/)
+> ⚠️ **Lưu ý:** Facebook cache link lần đầu tiên khi share. Nếu thumbnail chưa hiện, dùng công cụ debug ở trên để buộc Facebook quét lại.
 
 ---
 
 ## ✏️ Chỉnh sửa nội dung thiệp
 
-Mở `index.html`, kéo lên đầu phần `<style>`, tìm khối `:root { ... }`:
+Mở `index.html`, tìm khối `:root { ... }` trong thẻ `<style>`:
 
 ```css
 :root {
   /* ===== MÀU SẮC ===== */
   --color-name:     #95575e;   /* Tên chính */
-  --color-datetime: #754725;   /* Ngày giờ */
-  --color-address:  #754725;   /* Địa điểm */
-  --color-message:  #754725;   /* Câu nhắn */
+  --color-datetime: #754725;   /* Ngày giờ  */
+  --color-address:  #754725;   /* Địa điểm  */
+  --color-message:  #754725;   /* Câu nhắn  */
   --color-mylover:  #FCBBBB;   /* "My LOVER" */
 
   /* ===== CỠ CHỮ ===== */
@@ -75,11 +78,12 @@ Mở `index.html`, kéo lên đầu phần `<style>`, tìm khối `:root { ... }
 }
 ```
 
-Chỉnh trực tiếp giá trị → lưu → F5 trình duyệt là thấy kết quả ngay.
+Chỉnh giá trị → lưu → `git add . && git commit -m "update" && git push` → GitHub Pages tự cập nhật sau ~1 phút.
 
 ---
 
-## 📌 Lưu ý
+## 📌 Lưu ý quan trọng
 
-- Ảnh `og:image` chỉ hiện thumbnail trên Zalo/Facebook **khi trang đã được host online** (có URL `https://`)
-- Khi chạy file `index.html` trực tiếp trên máy (double-click) thì ảnh nền và nội dung vẫn hiện đúng, nhưng SEO thumbnail chưa hoạt động
+- **Đường dẫn ảnh** dùng tương đối (`assets/background.jpg`) để hoạt động đúng trên GitHub Pages (tránh dùng `/assets/...` bắt đầu bằng `/`)
+- **Thumbnail** chỉ hiện khi trang đã online với URL `https://` — không hoạt động khi mở file trực tiếp trên máy
+- **GitHub Pages** miễn phí cho repo public, cập nhật sau mỗi lần push ~1-2 phút
