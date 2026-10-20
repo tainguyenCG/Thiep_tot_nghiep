@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: sitemap.xml
+Sitemap: https://tainguyencg.github.io/Thiep_tot_nghiep/sitemap.xml
