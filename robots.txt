@@ -1,0 +1,6 @@
+# robots.txt — Cho phép tất cả bot thu thập trang
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: sitemap.xml

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ⚙️  SAU KHI DEPLOY: thay toàn bộ https://YOUR-DOMAIN.com
+  thành domain thật của bạn (VD: https://thuytrang.netlify.app)
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://YOUR-DOMAIN.com/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://YOUR-DOMAIN.com/assets/selesaiwisuda.jpg</image:loc>
+      <image:title>Thiệp tốt nghiệp Nguyễn Thị Thuỳ Trang</image:title>
+      <image:caption>Lễ Tốt Nghiệp Graduation Ceremony 2026 — Nguyễn Thị Thuỳ Trang</image:caption>
+    </image:image>
+  </url>
+</urlset>

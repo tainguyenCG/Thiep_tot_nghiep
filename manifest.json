@@ -1,0 +1,26 @@
+{
+  "name": "Thuỳ Trang Tốt Nghiệp",
+  "short_name": "Thiệp TN",
+  "description": "Thiệp mời lễ tốt nghiệp của Nguyễn Thị Thuỳ Trang — 06/12/2026",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f0dede",
+  "theme_color": "#95575e",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "assets/selesaiwisuda.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/selesaiwisuda.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "label": "Thiệp tốt nghiệp Nguyễn Thị Thuỳ Trang"
+    }
+  ]
+}
