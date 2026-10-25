@@ -15,7 +15,7 @@ Thiep/
 ├── README.md               ← File hướng dẫn này
 └── assets/
     ├── background.jpg          ← Ảnh nền thiệp
-    ├── selesaiwisuda.jpg       ← Ảnh thumbnail SEO (og:image)
+    ├── selesaiwisuda.png       ← Ảnh thumbnail SEO (og:image)
     └── Anh_mau.jpg
 ```
 

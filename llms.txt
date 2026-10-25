@@ -16,5 +16,5 @@
 ## Liên kết
 
 - Trang chính: https://tainguyencg.github.io/Thiep_tot_nghiep/
-- Ảnh thiệp: https://tainguyencg.github.io/Thiep_tot_nghiep/assets/selesaiwisuda.jpg
+- Ảnh thiệp: https://tainguyencg.github.io/Thiep_tot_nghiep/assets/selesaiwisuda.png
 - Sitemap: https://tainguyencg.github.io/Thiep_tot_nghiep/sitemap.xml

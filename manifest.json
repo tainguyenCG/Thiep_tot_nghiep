@@ -9,17 +9,17 @@
   "lang": "vi",
   "icons": [
     {
-      "src": "assets/selesaiwisuda.jpg",
+      "src": "assets/selesaiwisuda.png",
       "sizes": "1065x1477",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],
   "screenshots": [
     {
-      "src": "assets/selesaiwisuda.jpg",
+      "src": "assets/selesaiwisuda.png",
       "sizes": "1065x1477",
-      "type": "image/jpeg",
+      "type": "image/png",
       "label": "Thiệp tốt nghiệp Nguyễn Thị Thuỳ Trang"
     }
   ]
