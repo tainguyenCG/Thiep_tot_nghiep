@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ⚙️  SAU KHI DEPLOY: thay toàn bộ https://YOUR-DOMAIN.com
-  thành domain thật của bạn (VD: https://thuytrang.netlify.app)
+  ⚙️  URL đã cấu hình sẵn cho GitHub Pages (https://tainguyencg.github.io/Thiep_tot_nghiep/)
+  → Nếu đổi repo/domain: Ctrl+H thay toàn bộ URL cũ bằng URL mới, rồi push lên GitHub
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tainguyencg.github.io/Thiep_tot_nghiep/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
