@@ -19,7 +19,7 @@
   ============================================= -->
   <title>Thuỳ Trang Tốt Nghiệp</title>
   <meta name="description"
-    content="Thiệp mời lễ tốt nghiệp của Nguyễn Thị Thuỳ Trang — 16:00 - 17:00, ngày 18 tháng 11 tại Nhà hát Hoà Bình, TP HCM." />
+    content="Nguyễn Thị Thuỳ Trang - 16:00 - 17:00, ngày 18 tháng 11 năm 2026 tại Nhà hát Hoà Bình, 240 Đường 3 tháng 2, Phường Hoà Hưng, TP HCM." />
   <meta name="keywords"
     content="thiệp tốt nghiệp, Nguyễn Thị Thuỳ Trang, graduation, lễ tốt nghiệp, Nhà hát Hoà Bình" />
   <meta name="author" content="Nguyễn Thị Thuỳ Trang" />
@@ -34,7 +34,7 @@
   <meta property="og:url" content="https://tainguyencg.github.io/Thiep_tot_nghiep/" />
   <meta property="og:title" content="Thuỳ Trang Tốt Nghiệp" />
   <meta property="og:description"
-    content="Thiệp mời lễ tốt nghiệp của Nguyễn Thị Thuỳ Trang — 16:00 - 17:00, ngày 18 tháng 11 tại Nhà hát Hoà Bình, TP HCM." />
+    content="Nguyễn Thị Thuỳ Trang - 16:00 - 17:00, ngày 18 tháng 11 năm 2026 tại Nhà hát Hoà Bình, 240 Đường 3 tháng 2, Phường Hoà Hưng, TP HCM." />
   <meta property="og:image" content="https://tainguyencg.github.io/Thiep_tot_nghiep/assets/selesaiwisuda.jpg" />
   <meta property="og:image:width" content="1065" />
   <meta property="og:image:height" content="1477" />
@@ -48,7 +48,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Thuỳ Trang Tốt Nghiệp" />
   <meta name="twitter:description"
-    content="Thiệp mời lễ tốt nghiệp của Nguyễn Thị Thuỳ Trang — 16:00 - 17:00, ngày 18 tháng 11 tại Nhà hát Hoà Bình, TP HCM." />
+    content="Nguyễn Thị Thuỳ Trang - 16:00 - 17:00, ngày 18 tháng 11 năm 2026 tại Nhà hát Hoà Bình, 240 Đường 3 tháng 2, Phường Hoà Hưng, TP HCM." />
   <meta name="twitter:image" content="https://tainguyencg.github.io/Thiep_tot_nghiep/assets/selesaiwisuda.jpg" />
   <meta name="twitter:image:alt" content="Thiệp tốt nghiệp Nguyễn Thị Thuỳ Trang" />
 
@@ -60,7 +60,7 @@
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "Lễ Tốt Nghiệp Nguyễn Thị Thuỳ Trang",
-    "description": "Thiệp mời lễ tốt nghiệp Graduation Ceremony 2026",
+    "description": "Ngày 18 tháng 11 năm 2026, Nguyễn Thị Thuỳ Trang làm lễ tốt nghiệp tại Nhà hát Hoà Bình, 240 Đường 3 tháng 2, Phường Hoà Hưng, TP HCM. Lễ diễn ra từ 16:00 đến 17:00.",
     "startDate": "2026-11-18T16:00:00+07:00",
     "endDate": "2026-11-18T17:00:00+07:00",
     "eventStatus": "https://schema.org/EventScheduled",
@@ -79,7 +79,22 @@
       "@type": "Person",
       "name": "Nguyễn Thị Thuỳ Trang"
     },
-    "image": "assets/selesaiwisuda.jpg"
+    "about": {
+      "@type": "Person",
+      "name": "Nguyễn Thị Thuỳ Trang",
+      "alternateName": ["Thuỳ Trang", "Thuy Trang"],
+      "description": "Nguyễn Thị Thuỳ Trang quê Quãng Ngãi, tổ chức lễ tốt nghiệp ngày 18/11/2026 tại Nhà hát Hoà Bình, TP HCM.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Quãng Ngãi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Quãng Ngãi",
+          "addressCountry": "VN"
+        }
+      }
+    },
+    "image": "https://tainguyencg.github.io/Thiep_tot_nghiep/assets/selesaiwisuda.jpg"
   }
   </script>
 
@@ -288,6 +303,23 @@
       display: inline-block;
       text-shadow: 1px 1px 0 rgba(180, 80, 80, 0.12);
     }
+
+    /* =============================================
+       NỘI DUNG ẨN (sr-only) — Cho công cụ tìm kiếm & AI (GEO)
+       Ẩn về mặt thị giác nhưng máy vẫn đọc được.
+       KHÔNG dùng display:none vì bot sẽ bỏ qua nội dung.
+    ============================================= */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 </head>
 
@@ -321,6 +353,25 @@
     <!-- <div class="my-lover">My LOVER</div> -->
 
   </div><!-- end .card -->
+
+  <!-- =============================================
+       NỘI DUNG VĂN BẢN CHO MÁY (SEO/GEO) — ẩn khỏi mắt
+       nhưng Google & các AI (ChatGPT, Perplexity, Gemini)
+       đọc được. Ai cũng không "nhìn" được ảnh nền phía trên,
+       nên đây là nguồn dữ liệu văn bản duy nhất của trang.
+  ============================================= -->
+  <div class="sr-only">
+    <h1>Thiệp mời lễ tốt nghiệp Nguyễn Thị Thuỳ Trang</h1>
+    <p>
+      Ngày 18 tháng 11 năm 2026, Nguyễn Thị Thuỳ Trang làm lễ tốt nghiệp
+      tại Nhà hát Hoà Bình, 240 Đường 3 tháng 2, Phường Hoà Hưng, TP HCM.
+      Lễ diễn ra từ 16:00 đến 17:00.
+    </p>
+    <p>
+      Nguyễn Thị Thuỳ Trang quê Quãng Ngãi. Đây là trang thiệp mời
+      lễ tốt nghiệp (Graduation Ceremony 2026) dành cho gia đình và bạn bè.
+    </p>
+  </div>
 
 </body>
 
