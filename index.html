@@ -373,6 +373,32 @@
     </p>
   </div>
 
+  <!-- =============================================
+       🎵 NHẠC NỀN — tự phát & lặp lại vô hạn, không có nút
+       loop: hết bài tự chơi lại từ đầu
+  ============================================= -->
+  <audio src="assets/nhac.mp3" autoplay loop id="nhac-nen"></audio>
+
+  <script>
+    // Nhạc nền: thử phát ngay khi vào trang.
+    // Chrome/Safari (nhất là trên điện thoại) chặn tự phát âm thanh
+    // khi khách chưa tương tác → tự phát ngay ở lần chạm/nhấn đầu tiên,
+    // khách không cần bấm nút nào cả.
+    (function () {
+      var nhac = document.getElementById('nhac-nen');
+
+      // Thử phát ngay khi vừa tải trang
+      nhac.play().catch(function () {
+        // Bị trình duyệt chặn → chờ khách chạm/click/phím lần đầu rồi phát
+        ['pointerdown', 'touchstart', 'keydown'].forEach(function (suKien) {
+          window.addEventListener(suKien, function () {
+            nhac.play();
+          }, { once: true }); // chỉ chạy 1 lần rồi tự gỡ
+        });
+      });
+    })();
+  </script>
+
 </body>
 
 </html>
